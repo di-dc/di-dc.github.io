@@ -1,0 +1,75 @@
+html {
+	background-color: #cccccc;
+	background-image: linear-gradient(to bottom right, #f2f2f2, #141414);
+	color: #141414;
+	font-size: 16px;
+}
+
+.wallpaper {
+	display: block;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-image: url("../images/wyoming-01.jpg");
+	background-position: center;
+	background-size: cover;
+	opacity: .5;
+	position: fixed;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+}
+
+.about {
+  max-width: 26rem;
+}
+
+.name {
+  font-size: 2.25rem;
+  line-height: 1.125;
+  margin-bottom: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 799px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+  }
+
+  .side {
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .content {
+    align-items: flex-start;
+    justify-content: center;
+    justify-content: center;
+    padding: 15rem;
+	padding-right: 100rem;
+  }
+
+  .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 4rem;
+    order: 2;
+    width: 20rem;
+  }
+
+  .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+}

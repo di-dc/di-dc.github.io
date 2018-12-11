@@ -39,8 +39,8 @@ html {
 @media screen and (max-width: 799px) {
   .content {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: top;
+    align-items: left;
     padding: 5rem 3rem;
   }
 
@@ -56,7 +56,7 @@ html {
     justify-content: center;
     justify-content: center;
     padding: 15rem;
-	padding-right: 100rem;
+	padding-right: 80rem;
   }
 
   .side {

@@ -14,7 +14,7 @@ body {
   display: block;
   height: 100%;
   width: 100%;
-  background-image: url("../images/wyoming-01.jpg");
+  background-image: url("../images/denver-01.jpg");
   background-position: center;
   background-size: cover;
   opacity: .5;
@@ -34,8 +34,9 @@ header {
   padding: 30px;
   text-align: left;
   font-size: 1.4em;
-  background-color: #369;
+  /* background-color: #369; */
   color: white;
+  z-index: 1;
 }
 
 main {

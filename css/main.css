@@ -1,75 +1,79 @@
-html {
-	background-color: #cccccc;
-	background-image: linear-gradient(to bottom right, #f2f2f2, #141414);
-	color: #141414;
-	font-size: 16px;
+body {
+  font-family: arial;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #cccccc;
+  background-image: linear-gradient(to bottom right, #f2f2f2, #141414);
 }
 
 .wallpaper {
-	display: block;
-	height: 100%;
-	left: 0;
-	top: 0;
-	width: 100%;
-	background-image: url("../images/wyoming-01.jpg");
-	background-position: center;
-	background-size: cover;
-	opacity: .5;
-	position: fixed;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/wyoming-01.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: .5;
+  position: fixed;
 }
 
-.content {
-  display: flex;
-  position: relative;
-  min-height: 100vh;
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto 1fr auto;
+  }
 }
 
-.about {
-  max-width: 26rem;
+header {
+  grid-column: span 2;
+  padding: 30px;
+  text-align: left;
+  font-size: 1.4em;
+  background-color: #369;
+  color: white;
 }
 
-.name {
+main {
+  flex: 1;
+  padding: 80px;
+  z-index: 1;
+  font-family: 'Lora', serif;
+}
+
+recent {
+  /* background-color: #f90; */
+  /* background-color: #cccccc; */
+  padding: 20px;
+}
+
+aside {
+  padding: 20px;
+  background-color: #936;
+}
+
+footer {
+  grid-column: span 2;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #690;
+  color: white;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+p {
   font-size: 2.25rem;
   line-height: 1.125;
   margin-bottom: 0.5rem;
-}
-
-
-
-@media screen and (max-width: 799px) {
-  .content {
-    flex-direction: column;
-    justify-content: top;
-    align-items: left;
-    padding: 5rem 3rem;
-  }
-
-  .side {
-    margin-bottom: 3rem;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .content {
-    align-items: flex-start;
-    justify-content: center;
-    justify-content: center;
-    padding: 15rem;
-	padding-right: 80rem;
-  }
-
-  .side {
-    flex-grow: 0;
-    flex-shrink: 0;
-    height: 20rem;
-    margin-left: 4rem;
-    order: 2;
-    width: 20rem;
-  }
-
-  .about {
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
 }

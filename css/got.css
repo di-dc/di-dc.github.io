@@ -36,8 +36,8 @@ body {
    left: 0;
    position: absolute;
    top: 0;
-   /* width: 100%; */
-   width: 640px;
+   width: 100%;
+   /* width: 640px; */
 }
  
 /* 4x3 Aspect Ratio */
